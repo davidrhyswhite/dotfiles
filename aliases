@@ -1,0 +1,28 @@
+# Unix
+alias mkdir='mkdir -p'
+alias l='ls'
+alias ll='ls -Alh'
+alias rmd='rm -rf'
+alias e='$EDITOR'
+alias v='$VISUAL'
+
+# Make
+alias m='make'
+
+# Bundler
+alias b='bundle'
+
+# Ruby / Rails
+alias r='rails'
+alias rk='rake'
+alias rs='rspec'
+
+# Bower
+alias bow='bower'
+alias bows='bower --save'
+
+# Node / NPM
+alias n='node'
+alias npms='npm --save'
+alias npmsd='npm --save-dev'
+alias g='grunt'

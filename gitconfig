@@ -1,0 +1,24 @@
+[user]
+	name = David White
+	email = david.white@spry-soft.com
+
+[push]
+	default = current
+
+[alias]
+	co   = checkout
+	br   = branch
+	com  = commit
+	st   = status
+	cob  = checkout -b
+	corb = !sh -c 'git checkout -b $1 origin/$1' -
+	com  = checkout master
+
+[core]
+	autocrlf = input
+	filemode = false
+	excludesfile = ~/.gitignore
+
+[color]
+	diff = always
+	ui = auto
