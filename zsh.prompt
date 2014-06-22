@@ -1,22 +1,17 @@
 
 # fastest possible way to check if repo is dirty
 prompt_git_dirty() {
+	vcs_info
+	local branch_name="$vcs_info_msg_0_"
+	local color="%F{green}"
 	# check if we're in a git repo
-	command git rev-parse --is-inside-work-tree &>/dev/null || return
+	command git rev-parse --is-inside-work-tree &>/dev/null
 	# check if it's dirty
 	command git diff --quiet --ignore-submodules HEAD &>/dev/null
 
-	(($? == 1)) && echo '*'
+	(($? == 0)) && echo "%F{green}$branch_name"
+	(($? == 1)) && echo "%F{red}$branch_name"
 }
-
-#prompt_preexec() {
-#	cmd_timestamp=$EPOCHSECONDS
-#
-	# shows the current dir and executed command in the title when a process is active
-#	print -Pn "\e]0;"
-#	echo -nE "$PWD:t: $2"#
-#	print -Pn "\a"
-#}
 
 # string length ignoring ansi escapes
 prompt_string_length() {
@@ -30,7 +25,7 @@ prompt_precmd() {
 	# git info
 	vcs_info
 
-	local prompt_preprompt="\n%F{cyan}%~%F{242}$vcs_info_msg_0_`prompt_git_dirty` $prompt_username%f %F{yellow}%f"
+	local prompt_preprompt="\n%F{cyan}%~%F{242}`prompt_git_dirty` $prompt_username%f %F{yellow}%f"
 	print -P $prompt_preprompt
 
 	# check async if there is anything to pull
@@ -65,7 +60,6 @@ prompt_setup() {
 	autoload -Uz vcs_info
 
 	add-zsh-hook precmd prompt_precmd
-	#add-zsh-hook preexec
 
 	zstyle ':vcs_info:*' enable git
 	zstyle ':vcs_info:git*' formats ' %b'
