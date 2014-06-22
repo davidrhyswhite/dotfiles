@@ -22,3 +22,6 @@
 [color]
 	diff = always
 	ui = auto
+
+[credential]
+	helper = osxkeychain
