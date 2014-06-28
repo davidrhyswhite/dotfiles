@@ -17,6 +17,9 @@ alias r='rails'
 alias rk='rake'
 alias rs='rspec'
 
+# Git
+alias g='git'
+
 # Bower
 alias bow='bower'
 alias bows='bower --save'
@@ -25,4 +28,3 @@ alias bows='bower --save'
 alias n='node'
 alias npms='npm --save'
 alias npmsd='npm --save-dev'
-alias g='grunt'
