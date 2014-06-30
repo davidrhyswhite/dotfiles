@@ -21,10 +21,11 @@ alias rs='rspec'
 alias g='git'
 
 # Bower
-alias bow='bower'
-alias bows='bower --save'
+alias bow='bower install'
+alias bows='bower install --save'
 
 # Node / NPM
 alias n='node'
-alias npms='npm --save'
-alias npmsd='npm --save-dev'
+alias npmg='npm install --global'
+alias npms='npm install --save'
+alias npmsd='npm install --save-dev'
