@@ -3,6 +3,7 @@ alias mkdir='mkdir -p'
 alias l='ls'
 alias ll='ls -Alh'
 alias rmd='rm -rf'
+alias cl='clear'
 alias e='$EDITOR'
 alias v='$VISUAL'
 
