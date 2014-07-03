@@ -18,6 +18,9 @@ export PATH="$HOME/.bin:$PATH"
 export VISUAL=vim
 export EDITOR=$VISUAL
 
+# Set the path to Atom
+export ATOM_PATH=/opt/homebrew-cask/Caskroom/atom/latest
+
 # Load prompt theme
 [[ -f ~/.zsh.prompt ]] && source ~/.zsh.prompt
 
