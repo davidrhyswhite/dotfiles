@@ -1,10 +1,9 @@
-install openssl
-link openssl --force
 install git
 install ruby-build
 install rbenv
 install nvm
 install qt
+install phantomjs  
 install imagemagick
 install vim
 install postgres
@@ -26,5 +25,7 @@ cask install opera
 cask install limechat
 cask install music-manager
 cask install totalterminal
+cask install skype
+cask install gitx
 
 cask alfred link
