@@ -26,6 +26,7 @@ cask install limechat
 cask install music-manager
 cask install totalterminal
 cask install skype
+cask install virtualbox
 cask install gitx
 
 cask alfred link
