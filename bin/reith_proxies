@@ -1,9 +1,0 @@
-export HTTP_PROXY=www-cache.reith.bbc.co.uk:80
-export HTTPS_PROXY=www-cache.reith.bbc.co.uk:80
-export HTTPPROXY=www-cache.reith.bbc.co.uk:80
-export HTTPSPROXY=www-cache.reith.bbc.co.uk:80
-
-export http_proxy=www-cache.reith.bbc.co.uk:80
-export https_proxy=www-cache.reith.bbc.co.uk:80
-export httpproxy=www-cache.reith.bbc.co.uk:80
-export httpsproxy=www-cache.reith.bbc.co.uk:80
