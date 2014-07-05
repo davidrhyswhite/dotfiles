@@ -7,7 +7,7 @@ export PATH="/usr/local/bin:$PATH"
 # Set Node version
 export PATH="$PATH:$NODE_PATH"
 source $(brew --prefix nvm)/nvm.sh
-nvm use "0.10.28" > /dev/null
+nvm use > /dev/null
 
 # Load up RBEnv
 export PATH="$HOME/.rbenv/bin:$PATH"
