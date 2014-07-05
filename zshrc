@@ -12,6 +12,7 @@ nvm use "0.10.28" > /dev/null
 # Load up RBEnv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - --no-rehash)"
+eval "$(rbenv rehash)"
 export PATH="$HOME/.bin:$PATH"
 
 # Setup you choice of editor
