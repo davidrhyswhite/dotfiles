@@ -1,6 +1,6 @@
-http_proxy=www-cache.reith.bbc.co.uk:80
+http_proxy="http://www-cache.reith.bbc.co.uk:80"
 socks_proxy=socks-gw.reith.bbc.co.uk:1085
-ftp_proxy=ftp-gw.reith.bbc.co.uk:21
+ftp_proxy="ftp://ftp-gw.reith.bbc.co.uk:21"
 
 function proxyon {
   export HTTP_PROXY=$http_proxy

@@ -32,4 +32,4 @@ export ATOM_PATH=/opt/homebrew-cask/Caskroom/atom/latest
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 # Load functions
-source ~/.zsh-functions/bbc-proxies
+source ~/.zsh-functions/bbc-proxies.zsh
