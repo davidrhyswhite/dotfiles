@@ -19,6 +19,7 @@ alias rk='rake'
 alias rs='rspec'
 
 # Git
+alias git='hub'
 alias g='git'
 
 # Bower
