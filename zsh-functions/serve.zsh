@@ -1,3 +1,3 @@
 function serve {
-  python -m SimpleHTTPServer
+  python -m SimpleHTTPServer ${1:-8000}
 }
