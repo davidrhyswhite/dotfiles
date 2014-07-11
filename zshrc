@@ -33,3 +33,10 @@ export ATOM_PATH=/opt/homebrew-cask/Caskroom/atom/latest
 
 # Load functions
 source ~/.zsh-functions/bbc-proxies.zsh
+source ~/.zsh-functions/serve.zsh
+source ~/.zsh-functions/history.zsh
+
+# Setup history
+HISTSIZE=1000
+SAVEHIST=1000
+HISTFILE=~/.zhistory
