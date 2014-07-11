@@ -3,13 +3,14 @@ install ruby-build
 install rbenv
 install nvm
 install qt
-install phantomjs  
+install phantomjs
 install imagemagick
 install vim
 install postgres
 install redis
 install hub
 install heroku-toolbelt
+install docker
 
 tap caskroom/cask
 install brew-cask
@@ -28,5 +29,7 @@ cask install totalterminal
 cask install skype
 cask install virtualbox
 cask install gitx
+cask install openoffice
+cask install vagrant
 
 cask alfred link
