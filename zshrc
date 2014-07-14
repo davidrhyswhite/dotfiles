@@ -5,7 +5,6 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
 # Set Node version
-export PATH="$PATH:$NODE_PATH"
 source $(brew --prefix nvm)/nvm.sh
 nvm use > /dev/null
 
