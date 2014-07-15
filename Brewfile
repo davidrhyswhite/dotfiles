@@ -11,6 +11,7 @@ install redis
 install hub
 install heroku-toolbelt
 install docker
+install ngrok
 
 tap caskroom/cask
 install brew-cask
