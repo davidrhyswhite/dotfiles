@@ -1,5 +1,5 @@
 http_proxy="http://www-cache.reith.bbc.co.uk:80"
-socks_proxy=socks-gw.reith.bbc.co.uk:1085
+socks_proxy="socks-gw.reith.bbc.co.uk:1085"
 ftp_proxy="ftp://ftp-gw.reith.bbc.co.uk:21"
 
 function proxyon {
@@ -17,6 +17,9 @@ function proxyon {
 
   export FTP_PROXY=$ftp_proxy
   export ftp_proxy=$ftp_proxy
+
+  export SOCKS_PROXY=$socks_proxy
+  export socks_proxy=$socks_proxy
 
   export no_proxy="localhost, 127.0.0.1, *.dev, *.local, *.core.bbc.co.uk, *.dev.bbc.co.uk"
 }
@@ -36,6 +39,9 @@ function proxyoff {
 
   unset FTP_PROXY
   unset ftp_proxy
+
+  unset SOCKS_PROXY
+  unset socks_proxy
 
   unset no_proxy
 }
