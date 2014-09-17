@@ -1,0 +1,2 @@
+[ -f Gemfile ] && bundle install > /dev/null &
+[ -f package.json ] && npm install > /dev/null &
