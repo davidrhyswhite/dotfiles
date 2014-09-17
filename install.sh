@@ -8,6 +8,7 @@ for name in *; do
     fi
   else
     if [ "$name" != 'install.sh' ] &&
+        [ "$name" != 'setup.sh' ] &&
         [ "$name" != 'README.md' ] &&
         [ "$name" != 'Brewfile' ]; then
       echo "Creating $target"
