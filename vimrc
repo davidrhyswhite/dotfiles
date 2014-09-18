@@ -9,6 +9,9 @@ set backspace=2
 set background=dark
 colorscheme Tomorrow-Night-Eighties
 
+" Set linenumbers
+set nu
+
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
