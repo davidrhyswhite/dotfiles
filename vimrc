@@ -27,6 +27,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tmhedberg/matchit'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'wting/rust.vim'
 
 call vundle#end()
 filetype on
