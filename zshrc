@@ -7,11 +7,10 @@ export PATH="/usr/local/bin:$PATH"
 # Set Node version
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-nvm use > /dev/null
 
 # Load up RBEnv
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - --no-rehash)"
+eval "$(rbenv init - zsh)"
 eval "$(rbenv rehash)"
 export PATH="$HOME/.bin:$PATH"
 

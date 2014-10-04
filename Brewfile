@@ -4,14 +4,13 @@ install rbenv
 install nvm
 install qt
 install phantomjs
-install imagemagick
 install vim
 install postgres
-install redis
 install hub
 install heroku-toolbelt
 install docker
 install ngrok
+install irssi
 
 tap caskroom/cask
 install brew-cask
@@ -24,9 +23,8 @@ cask install firefox
 cask install lastfm
 cask install spotify
 cask install opera
-cask install limechat
 cask install music-manager
-cask install totalterminal
+cask install iterm
 cask install skype
 cask install virtualbox
 cask install gitx
