@@ -1,6 +1,6 @@
 # Unix
 alias mkdir='mkdir -p'
-alias l='ls'
+alias l='ls -a'
 alias ll='ls -Alh'
 alias rmd='rm -rf'
 alias cl='clear'

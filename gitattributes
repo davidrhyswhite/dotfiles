@@ -1,1 +1,2 @@
 *.md -crlf -diff
+*.pbxproj text -merge union

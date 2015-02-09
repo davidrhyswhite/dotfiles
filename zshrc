@@ -1,7 +1,8 @@
 # Some local binaries
 export PATH="$HOME/.bin:$PATH"
 
-# Homebrew binaries
+ #Homebrew binaries
+export PATH="/Users/david/Projects/sky/datum/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
 # Set Node version
@@ -39,6 +40,7 @@ source ~/.zsh-functions/bbc-proxies.zsh
 source ~/.zsh-functions/serve.zsh
 source ~/.zsh-functions/history.zsh
 source ~/.zsh-functions/sandbox.zsh
+source ~/.zsh-functions/count.zsh
 
 # Setup history
 HISTSIZE=1000

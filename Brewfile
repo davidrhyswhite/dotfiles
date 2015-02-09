@@ -1,34 +1,32 @@
-install git
-install ruby-build
-install rbenv
-install nvm
-install qt
-install phantomjs
-install vim
-install postgres
-install hub
-install heroku-toolbelt
-install docker
-install ngrok
-install irssi
+#!/bin/sh
 
-tap caskroom/cask
-install brew-cask
+brew install git
+brew install ruby-build
+brew install rbenv
+brew install nvm
+brew install qt
+brew install phantomjs
+brew install vim
+brew install postgres
+brew install hub
+brew install heroku-toolbelt
+brew install docker
+brew install ngrok
+brew install irssi
 
-cask install google-chrome
-cask install chromium
-cask install alfred
-cask install atom
-cask install firefox
-cask install lastfm
-cask install spotify
-cask install opera
-cask install music-manager
-cask install iterm
-cask install skype
-cask install virtualbox
-cask install gitx
-cask install openoffice
-cask install vagrant
+brew tap caskroom/cask
+brew install brew-cask
 
-cask alfred link
+brew cask install google-chrome
+brew cask install chromium
+brew cask install atom
+brew cask install firefox
+brew cask install lastfm
+brew cask install spotify
+brew cask install opera
+brew cask install music-manager
+brew cask install iterm
+brew cask install skype
+brew cask install virtualbox
+brew cask install gitx
+brew cask install vagrant
