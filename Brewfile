@@ -13,6 +13,8 @@ brew install heroku-toolbelt
 brew install docker
 brew install ngrok
 brew install irssi
+brew install boot2docker
+brew install fig
 
 brew tap caskroom/cask
 brew install brew-cask
