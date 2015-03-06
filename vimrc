@@ -36,6 +36,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'azakus/vim-webcomponents'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 
@@ -48,7 +49,9 @@ let g:multi_cursor_use_default_mapping = 0
 " Setup some key mappings
 command Q q!
 command W w
+command Wq wq
 nnoremap <Leader>ri :RunInInteractiveShell<space>
+map <C-t> :NERDTreeToggle<CR>
 
 let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-b>'
