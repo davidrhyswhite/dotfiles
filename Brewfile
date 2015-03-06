@@ -22,7 +22,6 @@ brew install brew-cask
 brew cask install google-chrome
 brew cask install chromium
 brew cask install atom
-brew cask install firefox
 brew cask install lastfm
 brew cask install spotify
 brew cask install opera
