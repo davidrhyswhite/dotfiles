@@ -31,3 +31,7 @@ alias n='node'
 alias npmg='npm install --global'
 alias npms='npm install --save'
 alias npmsd='npm install --save-dev'
+
+# Docker
+alias d='docker'
+alias dc='docker-compose'
