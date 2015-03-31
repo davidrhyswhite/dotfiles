@@ -13,6 +13,7 @@ brew install heroku-toolbelt
 brew install docker
 brew install ngrok
 brew install irssi
+brew install ansible
 brew install boot2docker
 brew install fig
 
@@ -26,7 +27,7 @@ brew cask install lastfm
 brew cask install spotify
 brew cask install opera
 brew cask install music-manager
-brew cask install iterm
+brew cask install iterm2
 brew cask install skype
 brew cask install virtualbox
 brew cask install gitx
