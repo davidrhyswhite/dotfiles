@@ -14,6 +14,10 @@ colorscheme Tomorrow-Night-Eighties
 set nu
 set noswapfile
 
+" Set split regions
+set splitright
+set splitbelow
+
 " Common ignore files / directories
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.git/*,*/node_modules/*,*/bower_components/*,*/dist/*
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
@@ -36,7 +40,6 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'azakus/vim-webcomponents'
-Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 
@@ -45,6 +48,7 @@ filetype plugin on
 
 let g:ctrlp_show_hidden = 1
 let g:multi_cursor_use_default_mapping = 0
+let g:netrw_liststyle=3
 
 " Setup some key mappings
 command Q q!
