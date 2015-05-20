@@ -330,7 +330,7 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>222 70 413 807 0 0 1440 877 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>516 240 924 485 0 0 1440 900 </string>
+	<string>404 186 924 485 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>6 455 570 401 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1066,7 +1066,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Vertical Spacing</key>
-			<real>1.0497255325317383</real>
+			<real>1</real>
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
