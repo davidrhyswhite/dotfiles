@@ -46,6 +46,7 @@ source ~/.zsh-functions/serve.zsh
 source ~/.zsh-functions/history.zsh
 source ~/.zsh-functions/sandbox.zsh
 source ~/.zsh-functions/count.zsh
+source ~/.zsh-functions/highlight.zsh
 
 # Setup history
 HISTSIZE=1000

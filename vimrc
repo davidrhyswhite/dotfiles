@@ -35,11 +35,12 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tmhedberg/matchit'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'wting/rust.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'azakus/vim-webcomponents'
+Plugin 'rust-lang/rust.vim'
+Plugin 'othree/html5.vim'
 
 call vundle#end()
 

@@ -1,4 +1,3 @@
 --database postgresql
 --skip-test-unit
 --skip-sprockets
---skip-active-record
