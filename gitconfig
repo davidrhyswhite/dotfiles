@@ -14,6 +14,7 @@
 	st   = status
   ps   = push
   pl   = pull
+  pf = push --force-with-lease
 	cob  = checkout -b
 	corb = !sh -c 'git checkout -b $1 origin/$1' -
 	com  = checkout master

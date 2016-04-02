@@ -31,16 +31,16 @@ Plugin 'gmarik/Vundle.vim'
 " Define bundles via Github repos
 Plugin 'christoomey/vim-run-interactive'
 Plugin 'pbrisbin/vim-mkdir'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tmhedberg/matchit'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'kien/ctrlp.vim'
-Plugin 'azakus/vim-webcomponents'
 Plugin 'rust-lang/rust.vim'
-Plugin 'othree/html5.vim'
+Plugin 'mxw/vim-jsx'
+Plugin 'othree/yajs.vim'
 
 call vundle#end()
 
@@ -50,6 +50,18 @@ filetype plugin on
 let g:ctrlp_show_hidden = 1
 let g:multi_cursor_use_default_mapping = 0
 let g:netrw_liststyle=3
+let g:jsx_ext_required = 0 " Allow JSX in JS files
+let g:syntastic_javascript_checkers = ['eslint']
+let g:netrw_list_hide= '.*\.DS_Store$'
+
+" Setup syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Setup some key mappings
 command Q q!
