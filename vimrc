@@ -31,7 +31,6 @@ Plugin 'gmarik/Vundle.vim'
 " Define bundles via Github repos
 Plugin 'christoomey/vim-run-interactive'
 Plugin 'pbrisbin/vim-mkdir'
-"Plugin 'scrooloose/syntastic'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tmhedberg/matchit'
 Plugin 'terryma/vim-multiple-cursors'
@@ -69,6 +68,16 @@ command W w
 command Wq wq
 nnoremap <Leader>ri :RunInInteractiveShell<space>
 map <C-t> :NERDTreeToggle<CR>
+
+" Get off my lawn
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
 let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-b>'

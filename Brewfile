@@ -4,7 +4,6 @@ brew install git
 brew install ruby-build
 brew install rbenv
 brew install nvm
-brew install qt
 brew install phantomjs
 brew install vim
 brew install postgres
