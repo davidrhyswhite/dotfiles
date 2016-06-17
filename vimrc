@@ -6,6 +6,11 @@ set nocompatible
 set tabstop=2 shiftwidth=2 expandtab
 set backspace=2
 
+" Indentation
+set autoindent
+set smartindent
+
+
 " Set the color scheme
 set background=dark
 colorscheme Tomorrow-Night-Eighties
