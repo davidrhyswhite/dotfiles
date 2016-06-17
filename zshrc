@@ -11,6 +11,7 @@ source $(brew --prefix nvm)/nvm.sh
 
 # Load up RBEnv
 export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 eval "$(rbenv init - zsh)"
 eval "$(rbenv rehash)"
 export PATH="$HOME/.bin:$PATH"
