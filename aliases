@@ -3,7 +3,7 @@ alias mkdir='mkdir -p'
 alias l='ls -a'
 alias ll='ls -Alh'
 alias rmd='rm -rf'
-alias cl='clear'
+alias c='clear'
 alias e='$EDITOR'
 alias v='$VISUAL'
 
@@ -27,7 +27,7 @@ alias bow='bower install'
 alias bows='bower install --save'
 
 # Node / NPM
-alias n='node'
+alias n='npm'
 alias npmg='npm install --global'
 alias npms='npm install --save'
 alias npmsd='npm install --save-dev'
