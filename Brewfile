@@ -10,6 +10,7 @@ brew install postgres
 brew install hub
 brew install heroku-toolbelt
 brew install ngrok
+brew install fortune
 
 brew tap caskroom/cask
 brew install brew-cask

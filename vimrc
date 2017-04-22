@@ -1,7 +1,9 @@
 syntax on
 filetype off
 
+" Disable vi compatibility
 set nocompatible
+
 " Set tab width to 2 spaces and backspace
 set tabstop=2 shiftwidth=2 expandtab
 set backspace=2
@@ -9,7 +11,8 @@ set backspace=2
 " Indentation
 set autoindent
 set smartindent
-
+set nopaste
+set paste
 
 " Set the color scheme
 set background=dark
@@ -26,6 +29,9 @@ set splitbelow
 " Common ignore files / directories
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,.git/*,*/node_modules/*,*/bower_components/*,*/dist/*
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
+" Create the `tags` file
+command! MakeTags !ctags -R .
 
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
@@ -45,6 +51,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'othree/yajs.vim'
+Plugin 'kballard/vim-swift'
+Plugin 'keith/swift.vim'
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()
 
@@ -57,6 +66,7 @@ let g:netrw_liststyle=3
 let g:jsx_ext_required = 0 " Allow JSX in JS files
 let g:syntastic_javascript_checkers = ['eslint']
 let g:netrw_list_hide= '.*\.DS_Store$'
+let g:syntastic_swift_checkers = ['swiftpm']
 
 " Setup syntastic settings
 set statusline+=%#warningmsg#
@@ -66,6 +76,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = { 'mode': 'passive' }
 
 " Setup some key mappings
 command Q q!
