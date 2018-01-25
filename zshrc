@@ -28,6 +28,11 @@ export VISUAL=vim
 export EDITOR=$VISUAL
 
 export COSMOS_CERT=/Users/david/workspace/dev.bbc.co.uk.pem
+export CERTS=/etc/pki/tls/private/
+export uas_api_key=bapd63mcqopnp
+export rmservices_api_key=YEpgIdGOOV2YLAYwxVXSYk7drT6p8jnu
+export receng_api_key=CJ8tfHIXvLndJUAo92OtKnthpqOMJjVD
+export nitro_api_key=fsqzfp6zvyt8gmjh736db36b
 
 # Load prompt theme
 [[ -f ~/.zsh.prompt ]] && source ~/.zsh.prompt
@@ -52,3 +57,7 @@ SAVEHIST=1000
 HISTFILE=~/.zhistory
 
 fortune | cowsay | lolcat
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /Users/david/Projects/mac-apps/sine/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/david/Projects/mac-apps/sine/node_modules/tabtab/.completions/electron-forge.zsh

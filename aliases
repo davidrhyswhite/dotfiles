@@ -21,6 +21,7 @@ alias rs='rspec'
 # Git
 alias git='hub'
 alias g='git'
+alias s='g status'
 
 # Bower
 alias bow='bower install'
@@ -31,7 +32,14 @@ alias n='npm'
 alias npmg='npm install --global'
 alias npms='npm install --save'
 alias npmsd='npm install --save-dev'
+alias y='yarn'
 
 # Docker
 alias d='docker'
 alias dc='docker-compose'
+
+# Common mistypes
+alias gut='git'
+alias car='cat'
+
+alias sky='cd ~/Projects/sky'

@@ -10,6 +10,7 @@
 	i       = init
 	a       = add
 	df      = diff
+	cl      = clone
 	co      = checkout
 	br      = branch
 	com     = commit
@@ -24,6 +25,7 @@
 	fo      = fetch origin
 	lg      = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
   discard = !sh -c ' git clean -df && git checkout -- .'
+  can     = commit --amend --no-edit
 
 [core]
 	autocrlf           = input

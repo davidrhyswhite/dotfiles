@@ -7,7 +7,7 @@ function forge {
   fi
 }
 
-function cosmos {
+function cosmos-sandbox {
   if [ $2 == "start" ]; then
     echo "Starting Cosmos (AWS) sandbox"
     VBoxHeadless --startvm "Cosmos (AWS) sandbox" &
