@@ -22,3 +22,5 @@ brew cask install iterm2
 brew cask install skype
 brew cask install virtualbox
 brew cask install vagrant
+brew cask install slack
+brew cask install docker

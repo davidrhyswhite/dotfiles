@@ -95,6 +95,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" Make `Ctrl-C` throw you into normal mode
+inoremap <C-c> <Esc>
+
 let g:multi_cursor_next_key='<C-n>'
 let g:multi_cursor_prev_key='<C-b>'
 let g:multi_cursor_skip_key='<C-x>'
