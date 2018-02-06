@@ -90,7 +90,7 @@ module.exports = {
     bell: 'SOUND',
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: true
+    copyOnSelect: true,
 
     // if true, on right click selected text will be copied or pasted if no
     // selection is present (true by default on Windows)
@@ -100,6 +100,9 @@ module.exports = {
     // bellSoundURL: 'http://example.com/bell.mp3',
 
     // for advanced config flags please refer to https://hyper.is/#cfg
+		hypercwd: {
+			initialWorkingDirectory: '~/Projects'
+		}
   },
 
   // a list of plugins to fetch and install from npm
@@ -109,6 +112,7 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
+		'hypercwd'
 	//	'hyperterm-base16-tomorrow-dark'
 	],
 
