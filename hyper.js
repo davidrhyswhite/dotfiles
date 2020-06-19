@@ -4,6 +4,7 @@
 
 module.exports = {
   config: {
+    updateChannel: 'canary',
     // default font size in pixels for all tabs
     fontSize: 11,
 
@@ -77,7 +78,7 @@ module.exports = {
     // make sure to use a full path if the binary name doesn't work
     // (e.g `C:\\Windows\\System32\\bash.exe` instead of just `bash.exe`)
     // if you're using powershell, make sure to remove the `--login` below
-    shell: '/usr/local/bin/zsh',
+    shell: '/bin/zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
     // by default ['--login'] will be used
@@ -101,20 +102,22 @@ module.exports = {
 
     // for advanced config flags please refer to https://hyper.is/#cfg
 		hypercwd: {
-			initialWorkingDirectory: '~/Projects'
+			initialWorkingDirectory: '~/Projects/sky'
 		}
   },
-
+  termCSS: `
+      span {
+        background-color: transparent !important;
+      }
+    `,
   // a list of plugins to fetch and install from npm
   // format: [@org/]project[#version]
   // examples:
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-		'hypercwd'
-	//	'hyperterm-base16-tomorrow-dark'
-	],
+  plugins: [//	'hyperterm-base16-tomorrow-dark'
+  'hypercwd', "hyperlinks", "hyper-statusline"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here

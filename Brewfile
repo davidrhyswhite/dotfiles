@@ -1,5 +1,6 @@
 #!/bin/sh
 
+brew install zsh zsh-completions
 brew install git
 brew install ruby-build
 brew install rbenv
@@ -27,3 +28,5 @@ brew cask install duet
 brew cask install glueprint
 brew cask install hyper
 brew cask install 1password
+brew cask install iterm2
+brew cask install visual-studio-code

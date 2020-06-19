@@ -1,11 +1,13 @@
 # Unix
 alias mkdir='mkdir -p'
+alias cs='cd'
 alias l='ls -a'
 alias ll='ls -Alh'
 alias rmd='rm -rf'
 alias c='clear'
 alias e='$EDITOR'
 alias v='$VISUAL'
+alias lua='/usr/local/Cellar/lua@5.1/5.1.5_8/bin/lua-5.1'
 
 # Make
 alias m='make'
@@ -33,10 +35,13 @@ alias npmg='npm install --global'
 alias npms='npm install --save'
 alias npmsd='npm install --save-dev'
 alias y='yarn'
+alias yr='yarn run'
 
 # Docker
 alias d='docker'
 alias dc='docker-compose'
+alias docker-clean-images='docker rmi $(docker images -a --filter=dangling=true -q)'
+alias docker-clean-ps='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
 
 # Common mistypes
 alias gut='git'

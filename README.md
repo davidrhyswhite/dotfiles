@@ -24,6 +24,9 @@ Install:
 
     cd dotfiles
     ./install.sh
+    ./Brewfile
+    ./setup.sh
+    sudo chsh -s /bin/zsh
 
 This will create symlinks for config files in your home directory.
 
