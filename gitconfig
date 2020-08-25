@@ -1,7 +1,7 @@
 [user]
 	name = David White
 	email = david.rhys.white@icloud.com
-  github = davidrhyswhite
+	github = davidrhyswhite
 
 [push]
 	default = current
@@ -15,17 +15,17 @@
 	br      = branch
 	com     = commit
 	st      = status
-  ps      = push
-  pl      = pull
-  pf      = push --force-with-lease
-  prune   = fetch --prune
+	ps      = push
+	pl      = pull
+	pf      = push --force-with-lease
+	prune   = fetch --prune
 	cob     = checkout -b
 	corb    = !sh -c 'git checkout -b $1 origin/$1' -
 	com     = checkout master
 	fo      = fetch origin
 	lg      = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-  discard = !sh -c ' git clean -df && git checkout -- .'
-  can     = commit --amend --no-edit
+	discard = !sh -c ' git clean -df && git checkout -- .'
+	can     = commit --amend --no-edit
 
 [core]
 	autocrlf           = input
@@ -34,7 +34,7 @@
 	editor             = vim
 
 [status]
-  showUntrackedFiles = all
+	showUntrackedFiles = all
 
 [color]
 	diff = always
