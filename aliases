@@ -36,7 +36,7 @@ alias npms='npm install --save'
 alias npmsd='npm install --save-dev'
 alias y='yarn'
 alias yr='yarn run'
-
+alias p='pnpm'
 # Docker
 alias d='docker'
 alias dc='docker-compose'

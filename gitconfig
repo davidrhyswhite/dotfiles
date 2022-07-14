@@ -1,6 +1,7 @@
 [user]
-	name = David White
-	email = david.rhys.white@icloud.com
+	name = davidrhyswhite
+	# email = david.rhys.white@icloud.com
+	email = david@madebydavid.co
 	github = davidrhyswhite
 
 [push]
@@ -40,12 +41,13 @@
 	diff = always
 	ui = auto
 
-[credential]
-	helper = osxkeychain
 [init]
 	templatedir = ~/.git_template
+	defaultBranch = main
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[pull]
+	rebase = false

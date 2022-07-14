@@ -1,6 +1,7 @@
 #!/bin/sh
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew tap homebrew/core
 
 brew install zsh zsh-completions
 brew install git
@@ -8,16 +9,20 @@ brew install python
 brew install nvm
 brew install hub
 brew install neovim
+brew install gh
+brew install rbenv
+brew install ruby-build
 
 brew tap homebrew/cask
 
-brew cask install google-chrome
-brew cask install brave-browser
-brew cask install slack
-brew cask install docker
-brew cask install 1password
-brew cask install iterm2
-brew cask install visual-studio-code
+brew install --cask google-chrome
+brew install --cask brave-browser
+brew install --cask slack
+brew install --cask docker
+brew install --cask 1password
+brew install --cask iterm2
+brew install --cask visual-studio-code
+brew install --cask aerial
 
 for name in *; do
   target="$HOME/.$name"
