@@ -7,23 +7,25 @@ alias rmd='rm -rf'
 alias c='clear'
 alias e='$EDITOR'
 alias v='$VISUAL'
-alias lua='/usr/local/Cellar/lua@5.1/5.1.5_8/bin/lua-5.1'
+
+# Neovim
+alias vim='nvim'
+alias vi='nvim'
 
 # Make
 alias m='make'
 
-# Bundler
-alias b='bundle'
-
 # Ruby / Rails
 alias r='rails'
+alias b='bundle'
 alias rk='rake'
 alias rs='rspec'
 
 # Git
 alias git='hub'
 alias g='git'
-alias s='g status'
+alias gs='git status'
+alias gl='git log'
 
 # Bower
 alias bow='bower install'
@@ -37,6 +39,11 @@ alias npmsd='npm install --save-dev'
 alias y='yarn'
 alias yr='yarn run'
 alias p='pnpm'
+
+# Rust
+alias rc='rustc'
+alias car='cargo'
+
 # Docker
 alias d='docker'
 alias dc='docker-compose'

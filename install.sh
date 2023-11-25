@@ -1,29 +1,15 @@
 #!/bin/sh
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-brew tap homebrew/core
+source ./install/macos.sh
+source ./install/homebrew.sh
 
-brew install zsh zsh-completions
-brew install git
-brew install python
-brew install nvm
-brew install hub
-brew install neovim
-brew install gh
-brew install rbenv
-brew install ruby-build
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-brew tap homebrew/cask
+# Switch the shell to zsh
+sudo chsh -s /bin/zsh
+compaudit | xargs chmod g-w
 
-brew install --cask google-chrome
-brew install --cask brave-browser
-brew install --cask slack
-brew install --cask docker
-brew install --cask 1password
-brew install --cask iterm2
-brew install --cask visual-studio-code
-brew install --cask aerial
-
+# Set dotfiles
 for name in *; do
   target="$HOME/.$name"
   if [ -e "$target" ]; then
@@ -32,29 +18,20 @@ for name in *; do
     fi
   else
     if [ "$name" != 'install.sh' ] &&
-       [ "$name" != 'init.vim' ] &&
+       [ "$name" != 'install' ] &&
+       [ "$name" != 'nvim' ] &&
        [ "$name" != 'README.md' ]; then
       echo "Creating $target"
       ln -s "$PWD/$name" "$target"
     fi
   fi
 done
-ln -s "$PWD/init.vim" "$HOME/init.vim"
 
 find bin -type f -exec chmod +x {} \;
 
-mkdir -p vim/colors
-curl -O https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night-Eighties.vim
-mv -f Tomorrow-Night-Eighties.vim vim/colors
+# Setup NeoVim
+mkdir -p ~/.config
+ln -s $(pwd)/nvim ~/.config/nvim
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
-mkdir -p iterm
-curl -O https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/iTerm2/Tomorrow%20Night%20Eighties.itermcolors
-mv -f Tomorrow%20Night%20Eighties.itermcolors iterm
-
-cd ~
-nvm i
-npm i -g neovim
-npm i -g yarn
-
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-pip install pynvim

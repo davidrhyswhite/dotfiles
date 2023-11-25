@@ -2,3 +2,6 @@
 vim/
 iterm/*.itermcolors
 bin/
+nvim/plugin/
+vscode/*
+!vscode/david.code-profile

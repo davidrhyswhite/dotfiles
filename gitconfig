@@ -1,8 +1,8 @@
 [user]
-	name = davidrhyswhite
-	# email = david.rhys.white@icloud.com
+	name = David
 	email = david@madebydavid.co
 	github = davidrhyswhite
+	signingKey = 3496A0DA1A14CBDE
 
 [push]
 	default = current
@@ -22,7 +22,7 @@
 	prune   = fetch --prune
 	cob     = checkout -b
 	corb    = !sh -c 'git checkout -b $1 origin/$1' -
-	com     = checkout master
+	com     = checkout main
 	fo      = fetch origin
 	lg      = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	discard = !sh -c ' git clean -df && git checkout -- .'
@@ -51,3 +51,7 @@
 	process = git-lfs filter-process
 [pull]
 	rebase = false
+[credential]
+	username = davidrhyswhite
+[commit]
+	gpgsign = true
