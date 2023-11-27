@@ -1,6 +1,9 @@
 # Init Homebrew
 eval $(/opt/homebrew/bin/brew shellenv)
 
+# Init starship
+eval "$(starship init zsh)"
+
 # Some local binaries
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/bin:$HOME/.bin:$PATH"

@@ -18,13 +18,14 @@ alias m='make'
 # Ruby / Rails
 alias r='rails'
 alias b='bundle'
+alias be='bundle exec'
 alias rk='rake'
 alias rs='rspec'
 
 # Git
-alias git='hub'
 alias g='git'
 alias gs='git status'
+alias gst='git status'
 alias gl='git log'
 
 # Bower

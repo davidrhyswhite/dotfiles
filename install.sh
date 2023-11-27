@@ -5,7 +5,7 @@ source ./install/homebrew.sh
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-# Switch the shell to zsh
+# # Switch the shell to zsh
 sudo chsh -s /bin/zsh
 compaudit | xargs chmod g-w
 
@@ -30,8 +30,6 @@ done
 find bin -type f -exec chmod +x {} \;
 
 # Setup NeoVim
-mkdir -p ~/.config
-ln -s $(pwd)/nvim ~/.config/nvim
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
