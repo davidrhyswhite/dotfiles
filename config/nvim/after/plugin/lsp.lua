@@ -10,7 +10,7 @@ end)
 -- to learn how to use mason.nvim with lsp-zero
 require('mason').setup({})
 require('mason-lspconfig').setup({
-  ensure_installed = {'tsserver', 'eslint', 'html', 'rust_analyzer', 'solargraph', 'rubocop', 'taplo', 'tailwindcss'},
+  ensure_installed = {'tsserver', 'eslint', 'html', 'rust_analyzer', 'ruby_ls', 'taplo', 'tailwindcss'},
   handlers = {
     lsp_zero.default_setup,
   }

@@ -54,3 +54,10 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 
 source "$HOME/.cargo/env"
+
+# bun completions
+[ -s "/Users/david/.bun/_bun" ] && source "/Users/david/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

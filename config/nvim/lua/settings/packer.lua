@@ -46,7 +46,6 @@ return require("packer").startup(function(use)
     requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
-  use("lukas-reineke/indent-blankline.nvim")
   use("nvim-tree/nvim-tree.lua")
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
