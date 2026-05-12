@@ -1,0 +1,10 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-b": "workspace::ToggleLeftDock",
+      "cmd-r": "workspace::ToggleBottomDock",
+      "cmd-j": "workspace::ToggleRightDock"
+    }
+  }
+]

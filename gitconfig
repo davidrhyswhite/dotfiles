@@ -1,8 +1,8 @@
 [user]
-	name = David
-	email = david@madebydavid.co
+	name = David White
+	email = david@greatwhite.software
 	github = davidrhyswhite
-	signingKey = 3496A0DA1A14CBDE
+	signingKey = 7F0D864E959E6406
 
 [push]
 	default = current

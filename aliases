@@ -16,7 +16,6 @@ alias vi='nvim'
 alias m='make'
 
 # Ruby / Rails
-alias r='rails'
 alias b='bundle'
 alias be='bundle exec'
 alias rk='rake'

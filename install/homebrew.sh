@@ -34,9 +34,9 @@ brew install --cask brave-browser
 brew install --cask firefox
 
 # Development tools
-brew install --cask visual-studio-code
+brew install --cask zed
 brew install --cask docker
-brew install --cask warp
+brew install --cask ghostty
 brew install --cask gpg-suite
 brew install --cask postman
 
@@ -45,9 +45,6 @@ brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 
 # General applications
-brew install --cask 1password
-brew install --cask raycast
-brew install --cask notion
 brew install --cask aerial
 brew install --cask slack
 brew install --cask figma

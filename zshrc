@@ -45,6 +45,7 @@ fi
 [[ -f ~/.aliases ]] && source ~/.aliases
 
 # Load functions
+source ~/.zsh-functions/rails.zsh
 source ~/.zsh-functions/bbc-proxies.zsh
 source ~/.zsh-functions/history.zsh
 source ~/.zsh-functions/count.zsh
