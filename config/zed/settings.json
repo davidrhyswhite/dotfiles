@@ -8,13 +8,13 @@
 // from the command palette or from `Zed` application menu.
 {
   "outline_panel": {
-    "dock": "left"
+    "dock": "right"
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "right"
   },
   "git_panel": {
-    "dock": "left"
+    "dock": "right"
   },
   "languages": {
     "Ruby": {
@@ -40,7 +40,7 @@
     },
   },
   "agent": {
-    "dock": "right",
+    "dock": "left",
     "default_model": {
       "provider": "openai",
       "model": "gpt-5",

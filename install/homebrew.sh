@@ -40,6 +40,11 @@ brew install --cask ghostty
 brew install --cask gpg-suite
 brew install --cask postman
 
+# AI
+brew install --cask chatgpt
+brew install --cask codex-app
+brew install codex
+
 # Development tools: terraform
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform

@@ -25,19 +25,13 @@ source $(brew --prefix nvm)/nvm.sh
 export VISUAL=nvim
 export EDITOR=$VISUAL
 
-# Load prompt theme, except for Warp
-if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
-  source $(brew --prefix)/opt/spaceship/spaceship.zsh
-  SPACESHIP_PROMPT_ASYNC=FALSE
-fi
-
 # Load general zsh config
 [[ -f ~/.zsh.config ]] && source ~/.zsh.config
 
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 
-  autoload -Uz compinit
+  autoload -Uz compinit && compinit -u
   compinit
 fi
 
